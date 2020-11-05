@@ -1,0 +1,33 @@
+{
+  "name": "@tklc/miniapp-tracker-sdk",
+  "version": "0.0.25",
+  "description": "",
+  "main": "es/index.js",
+  "files": [
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git.allcitygo.com:8000/front/miniapp-tracker-sdk"
+  },
+  "keywords": [
+    "mini",
+    "app",
+    "tracker"
+  ],
+  "scripts": {
+    "test": "mocha --reporter spec --require ts-node/register src/**/*.test.ts",
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "git push origin && npm run build && cnpm publish --registry=http://10.0.0.122:7001   "
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "rc-tools": "6.x",
+    "ts-node": "^8.9.1"
+  },
+  "author": "linxh@citytsm.com",
+  "license": "ISC"
+}

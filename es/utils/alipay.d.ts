@@ -1,0 +1,12 @@
+export declare const setStorageSync: (key: any, data: any) => void;
+export declare const setStorage: (key: any, data: any) => void;
+export declare const getStorageSync: (key: any) => any;
+export declare const guid: () => string;
+export declare const setUID: (key: any, uid: any) => any;
+export declare const getUUid: (callback: any) => void;
+export declare const getSessionId: () => string;
+export declare const getBasicInfo: (callback: Function) => Promise<void>;
+export declare const requestNext: (that: any) => void;
+export declare const request: (url: string, msg: string, that: any) => void;
+export declare function hookRequest(mtr: any): void;
+export declare function hookGetLocation(mtr: any): void;
